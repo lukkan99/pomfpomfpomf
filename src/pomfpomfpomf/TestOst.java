@@ -13,11 +13,13 @@ public class TestOst {
     public void onInitialization(InitializationEvent event) {
         event.getGame().getLogger().info("INITIALIZATION!!!!!!!!!!!!!!!!!!!!!!!!!!");
         event.getGame().getLogger().warn("woot this is a test for sponge");
+        event.getGame().getLogger().error("test no3");
     }
 
     @SpongeEventHandler
     public void onServerStarting(ServerStartingEvent event) {
         event.getGame().getLogger().info("server is starting!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         event.getGame().getLogger().warn("woot this is a test too");
+        event.getGame().getLogger().error("pomfpomfpomf");
     }
 }
