@@ -6,7 +6,7 @@ import org.spongepowered.api.event.state.ServerStartingEvent;
 import org.spongepowered.api.plugin.Plugin;
 
 
-@Plugin(id = "PomfPomfPOmf", name = "PomfPomfPomfLukkan99sTest")
+@Plugin(id = "PomfPomfPomf", name = "PomfPomfPomfLukkan99sTest")
 public class TestOst {
     @SpongeEventHandler
     public void onInitialization(InitializationEvent event) {
