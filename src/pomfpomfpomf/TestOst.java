@@ -3,8 +3,9 @@ package pomfpomfpomf;
 import org.spongepowered.api.event.SpongeEventHandler;
 import org.spongepowered.api.event.state.InitializationEvent;
 import org.spongepowered.api.event.state.ServerStartingEvent;
+import org.spongepowered.api.event.state.ServerStoppingEvent;
+import org.spongepowered.api.event.state.ServerStoppedEvent;
 import org.spongepowered.api.plugin.Plugin;
-
 
 @Plugin(id = "PomfPomfPomf", name = "PomfPomfPomf Lukkan99s Test")
 public class TestOst {
@@ -26,5 +27,15 @@ public class TestOst {
         event.getGame().getLogger().info("and it useless in a real server");
         event.getGame().getLogger().info("if you dont whant to see this every sever start up");
         event.getGame().getLogger().info("just remove pomfpomfpomf in mod folder");
+    }
+    
+    @SpongeEventHandler
+    public void onServerStopping(ServerStoppingEvent event) {
+        event.getGame().getLogger().info("shutting down");
+    }
+    
+    @SpongeEventHandler
+    public void onServerStopped(ServerStoppedEvent event) {
+        event.getGame().getLogger().info("i dont hate you");
     }
 }
